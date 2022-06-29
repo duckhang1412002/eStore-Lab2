@@ -1,0 +1,38 @@
+@model BusinessObject.ProductObject
+@{
+    ViewData["Title"] = "Detail";
+}
+<div class="container">
+    <h1>Product Details</h1>
+    <h4>@ViewBag.Message</h4>
+    <hr>
+    <div class="row">
+        <b class="col-6">ProductId</b>
+        <div class="col-6">@Model.ProductId</div>
+    </div>
+    <div class="row">
+        <b class="col-6">CategoryId</b>
+        <div class="col-6">@Model.CategoryId</div>
+    </div>
+    <div class="row">
+        <b class="col-6">ProductName</b>
+        <div class="col-6">@Model.ProductName</div>
+    </div>
+    <div class="row">
+        <b class="col-6">Weight</b>
+        <div class="col-6">@Model.Weight</div>
+    </div>
+    <div class="row">
+        <b class="col-6">UnitPrice</b>
+        <div class="col-6">@Model.UnitPrice</div>
+    </div>
+    <div class="row">
+        <b class="col-6">UnitsInStock</b>
+        <div class="col-6">@Model.UnitsInStock</div>
+    </div>
+    <br> 
+    <div>
+        @Html.ActionLink("Edit", "Edit", new {id = Model.ProductId}) |
+        @Html.ActionLink("Back to list", "Index") 
+    </div>
+</div>
