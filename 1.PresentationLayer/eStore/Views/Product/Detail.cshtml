@@ -33,6 +33,7 @@
     <br> 
     <div>
         @Html.ActionLink("Edit", "Edit", new {id = Model.ProductId}) |
-        @Html.ActionLink("Back to list", "Index") 
+        @Html.ActionLink("Back to list", "Index") |
+        @Html.ActionLink("Delete", "Delete", new {id = Model.ProductId}) 
     </div>
 </div>

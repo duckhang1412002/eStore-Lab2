@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
-namespace BusinessObject
+namespace BusinessObject 
 {
     public partial class MemberObject
     {
