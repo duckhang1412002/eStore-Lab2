@@ -1,12 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 #nullable disable
 
 namespace DataAccess
 {
-    public partial class eStoreContext : DbContext
+    public partial class eStoreContext : IdentityDbContext
     {
         public eStoreContext()
         {
